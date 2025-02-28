@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasir Hussain Khan - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9fbfc;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            width:auto;
+height:auto;
+        }
+
+        .navbar {
+            background: linear-gradient(120deg, #6a11cb, #2575fc);
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+a.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a.btn:hover {
+    background-color: #0056b3;
+}
+
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffcf33;
+        }
+
+        header {
+            background: linear-gradient(120deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+.header-content {
+    text-align: center;
+    padding: 50px;
+}
+
+.header-image {
+    width: 400px; /* Adjust the size as needed */
+    height: 400px; /* Adjust the size as needed */
+    border-radius: 96%; /* For circular image */
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+        header .btn {
+            margin-top: 20px;
+            background-color: #ffcf33;
+            color: #333;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        header .btn:hover {
+            background-color: #f0b90d;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #2575fc;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-body h5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .card-body p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #f1f5f9;
+            text-align: center;
+            padding: 20px 10px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #6a11cb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="portfolioApp">
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">Nasir Hussain Khan</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Certificates\certficate.html">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header>
+    <div class="header-content">
+        <img src="Nasir.jpg" alt="Nasir Hussain Khan" class="header-image">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Your one-stop destination to explore my skills, projects, and achievements.</p>
+        <button class="btn" onclick="window.location.href='#projects'">Explore My Work</button>
+    </div>
+</header>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="container">
+            <p class="text-center">   
+
+Motivated and soon-to-be graduate in Computer Science Engineering with a specialization in data science, Python development, and data 
+analysis. Proficient in Python, java, Software Development with hands-on experience in applying machine learning techniques to solve 
+real-world problems. Passionate about leveraging data-driven insights to create impactful solutions and seeking opportunities to contribute 
+to innovative projects in data analytics, Software Development and machine learning. Ready to bring academic knowledge and internship 
+experiences into professional environments to drive meaningful outcomes. 
+</p>
+        </div>
+    </section>
+
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="container cards">
+        <div class="card">
+            <div class="card-body">
+                <h5>Programming languages</h5>
+                <p>Proficient in Java (OOPS, DSA(Data Structure and Algorithms))</p>
+                <P>Python</P>
+                <P>JavaScript</P>
+                <P>PHP</P>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5>Frameworks</h5>
+                <p>Django : 2 years of experience</p> <p> AngularJS : 2 years of experience</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5>Databases and Data Manipulation languages</h5>
+                <p>SQL</p>
+                <p>MySQL</p>
+                <p>MongoDB</p>
+                <p>NoSQL</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5>Machine Learning</h5>
+                <center>
+                <p>Supervised Machine Learning</p>
+                <p>Semi-Supervised Machine Learning</p>
+                <p>Reinforced Machine Learning</p>
+                <p>Unsupervised Machine Learning</p>
+                <p>Classification and Regression</p>
+                <p>Numpy,Pandas</p><p>Matplotlib</p><p>Pytorch</p><p>TensorFlow</p><p>Seaborn, Scikit-learn</p><p>Deep Learning: Convolutional Neural Networks(CNN)</p>
+                 </center>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5>Data Science</h5><p>ETL dashboards</p>
+                <p>Statistics, Probability, Calculus,Linear Algebra, Data Preprocessing, Data Visualization, Predictive Modelling</p>
+                <p>Data Wrangling, Big Data Analysis</p>
+                <P>Statistical Inference,Exploratory Data Analysis(EDA), and the Data Science Process</P>
+                <P>Algorithms:
+                    Linear Regression, Logistic Regression,
+                    k-Nearest Neighbors (k-NN),k-means </P>
+                <P>Singular Value Decomposition (SVD),
+                    Principal Component Analysis (PCA),
+                    Alternating Least Squares  </P>
+                <P> Data Engineering: MapReduce, Hive, and Hadoop.</P>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5>Technical Tools</h5>
+                <p>Pillow, OpenCV, Matplotlib, MS-Excel</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="container cards">
+        <div class="card">
+            <img src="images/blood.jpg" alt="Blood Group Detection System">
+            <div class="card-body">
+                <h5>Blood Group Detection System</h5>
+                <p><strong>Technologies:</strong> Python, Django, MySQL, JavaScript, Machine Learning, PyTorch, Seaborn, Pillow, Matplotlib</p>
+                <p><strong>Year:</strong> 2024</p>
+                <ul>
+                    <li>Developed a cutting-edge Blood Group Detection System using fingerprint image processing and deep learning techniques.</li>
+                    <li>Achieved an accuracy of 98% with a custom CNN model for classification.</li>
+                    <li>Utilized PyTorch for model building, Seaborn and Matplotlib for data visualization, and Pillow for image preprocessing.</li>
+                    <li>Designed a user-friendly interface using Django and JavaScript, backed by a robust MySQL database.</li>
+                </ul>
+            </div>
+            <button onclick="window.location.href='snapshots/Snapshotsblood.html'">ClicK here to view snapshots</button>
+        </div>
+        <div class="card">
+            <img src="images/youtube-scraper.png" alt="YouTube Data Extraction Tool">
+            <div class="card-body">
+                <h5>YouTube Data Extraction and Caption Analysis Tool</h5>
+                <p><strong>Technologies:</strong> Python, YouTube Data API, YouTube Transcript API, Pandas, Regular Expressions, CSV</p>
+                <p><strong>Year:</strong> 2024</p>
+                <ul>
+                    <li>Developed a Python-based application to dynamically scrape metadata and captions from YouTube videos.</li>
+                    <li>Extracted details for 500+ videos, including title, description, tags, view count, comment count, and more.</li>
+                    <li>Implemented a script to download, clean, and preprocess available captions using regular expressions, saving the data to a structured CSV format.</li>
+                    <li>Enabled dynamic genre selection for real-time data extraction with robust error handling for unavailable transcripts.</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <div class="card">
+            <img src="images/book.jpg" alt="Book Recommendation System">
+            <div class="card-body">
+                <h5>Book Recommendation System</h5>
+                <p><strong>Technologies:</strong> Python, ML, Jupyter Notebook</p>
+                <p><strong>Duration:</strong> 06/2024 - 08/2024</p>
+                <ul>
+                    <li>Developed a machine learning-based system to recommend books by analyzing user inputs and leveraging large datasets.</li>
+                    <li>Conducted extensive data preprocessing, feature extraction, and model optimization to improve accuracy.</li>
+                    <li>Visualized patterns and trends to enhance user experience and recommendations.</li>
+                </ul>
+                <button onclick="window.location.href='snapshots/snapshotsrecommendaton.html'">ClicK here to view snapshots</button>
+    
+            </div>
+        </div>
+
+
+
+
+
+        <div class="card">
+            <img src="images/quiz.jpg" alt="Online Quiz Management System">
+            <div class="card-body">
+                <h5>Online Quiz Management System</h5>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                <p><strong>Duration:</strong> 01/2024 - 02/2024</p>
+                <ul>
+                    <li>Built a robust system to automate quiz processes and streamline faculty workload.</li>
+                    <li>Implemented a modular architecture for administrators, faculty, and students with a secure database.</li>
+                </ul>
+            
+            
+                <button onclick="window.location.href='snapshots/snaphotsquiz.html'">ClicK here to view snapshots</button>
+    
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="images/traffic.jpg" alt="Online Traffic Management System">
+            <div class="card-body">
+                <h5>Online Traffic Management System</h5>
+                <p><strong>Technologies:</strong> C++, OpenGL, Computer Graphics</p>
+                <p><strong>Year:</strong> 2024</p>
+                <ul>
+                    <li>Designed and implemented a simulation-based system for traffic management using C++ and OpenGL.</li>
+                    <li>Applied computer graphics techniques to create realistic traffic flow visualization and control mechanisms.</li>
+                    <li>Developed features like traffic light control, vehicle movement simulation, and real-time animations.</li>
+                    <li>Optimized performance to handle complex scenarios with multiple traffic elements simultaneously.</li>
+                </ul>
+                <button onclick="window.location.href='snapshots/snapshotsairtraffic.html'">ClicK here to view snapshots</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   
+
+<section id="resume" ng-controller="ResumeController">
+    <h2 class="section-title">Resume</h2>
+    <div class="container">s
+        <h3>{{ resume.name }}</h3>
+        <p>{{ resume.summary }}</p>
+        <ul>
+            <li ng-repeat="experience in resume.experience">
+                <strong>{{ experience.title }}</strong> at {{ experience.company }} ({{ experience.duration }})
+                <p>{{ experience.description }}</p>
+            </li>
+        </ul>        
+        
+        <!-- Embedded resume viewer -->
+        <h4>View Resume</h4>
+        <iframe src="RenderCV_EngineeringResumes_Theme__3_ (1).pdf" width="100%" height="600px"></iframe>
+         <!-- Button to download the resume -->
+        <a href="RenderCV_EngineeringResumes_Theme__3_ (1).pdf" class="btn" target="_blank" download>Download Resume</a>
+    </div>
+</section>
+
+    <footer>
+        &copy; 2024 Nasir Hussain Khan | <a href="#">Privacy Policy</a>
+    </footer>
+
+    <script>
+        angular.module('portfolioApp', []).controller('ResumeController', function($scope) {
+            $scope.resume = {
+                name: 'Nasir Hussain Khan',
+                summary: 'Experienced developer with expertise in multiple programming languages and frameworks.',
+                experience: [
+                    {
+                        title: 'Software Developer',
+                        company: 'Tech Solutions Inc.',
+                        duration: 'Jan 2023 - Present',
+                        description: 'Developed web applications using AngularJS and Python.'
+                    },
+                    {
+                        title: 'Intern',
+                        company: 'Innovative Labs',
+                        duration: 'May 2022 - Dec 2022',
+                        description: 'Worked on data analysis and machine learning projects.'
+                    }
+                ],
+                skills: 'Java, Python, JavaScript, AngularJS, Django'
+            };
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
