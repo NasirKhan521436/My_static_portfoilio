@@ -52,3 +52,12 @@ cd My_static_portfoilio
 open index.html
 
 ### OUTPUT :
+![Image](https://github.com/user-attachments/assets/4c57fff6-daaf-4387-8431-ea16c59def2b)
+
+![Image](https://github.com/user-attachments/assets/5876e956-7b3d-4fe8-b0cf-40686c2f9d1f)
+
+![Image](https://github.com/user-attachments/assets/228c0ebd-140f-431f-8a8b-8a776f3a9a73)
+
+![Image](https://github.com/user-attachments/assets/d9cf4bc3-26ac-400f-a182-cc4eddd50839)
+
+![Image](https://github.com/user-attachments/assets/a29f6f77-8317-4f9a-b137-073bf2018634)
