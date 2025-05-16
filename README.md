@@ -49,9 +49,10 @@ If you'd like to download, edit, or expand the project locally:
 ```bash
 git clone https://github.com/NasirKhan521436/My_static_portfoilio.git
 cd My_static_portfoilio
-open index.html
+open profile.html
 
 ### OUTPUT :
+
 ![Image](https://github.com/user-attachments/assets/4c57fff6-daaf-4387-8431-ea16c59def2b)
 
 ![Image](https://github.com/user-attachments/assets/5876e956-7b3d-4fe8-b0cf-40686c2f9d1f)
