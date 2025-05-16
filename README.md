@@ -42,7 +42,6 @@ By keeping the portfolio static (no server-side logic), load times are fast and 
 
 > Note: No external libraries or frameworks like Bootstrap or jQuery were used — all components were built from scratch to keep the project lightweight and to demonstrate raw coding capability.
 
-## 🔧 How to Run the Project Locall
 
 ### OUTPUT :
 
@@ -55,3 +54,13 @@ By keeping the portfolio static (no server-side logic), load times are fast and 
 ![Image](https://github.com/user-attachments/assets/d9cf4bc3-26ac-400f-a182-cc4eddd50839)
 
 ![Image](https://github.com/user-attachments/assets/a29f6f77-8317-4f9a-b137-073bf2018634)
+
+
+## 🔧 How to Run the Project Locall
+
+If you'd like to download, edit, or expand the project locally:
+
+```bash
+git clone https://github.com/NasirKhan521436/My_static_portfoilio.git
+cd My_static_portfoilio
+open profile.html
