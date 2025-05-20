@@ -1,9 +1,17 @@
-*Company*: CODTECH IT SOLUTIONS
-*NAME*:  NASIR HUSSAIN KHAN
-*INTERN ID*: CT12WE82
-*DOMAIN*: Software Development
-*Duration*: 12 weeks
-*Mentor*: NEELA SANTOSH
+# Collaborative Note-Taking Tool (Google Docs Clone)
+
+---
+### **Company:** CODTECH IT SOLUTIONS
+
+### **Intern Name:** Nasir Hussain Khan
+
+### **Intern ID:** CT12WE82
+
+### **Domain:** Software Development
+
+### **Internship Duration:** 12 weeks
+
+### **Mentor:** Neela Santosh
 ## INTERNSHIP TASK 1:  To Build a Static PortFolio
 ## Task Description 
 # 🌟 Personal Portfolio Website – Static Version
